@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nombre"
+            android:id="@+id/txtNombreMenu"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/txtIngredienteMenu"
+            android:layout_alignStart="@+id/txtIngredienteMenu"
+            android:layout_marginTop="23dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Precio"
+            android:id="@+id/txtPrecioMenu"
+            android:layout_alignBaseline="@+id/lblPrecio"
+            android:layout_alignBottom="@+id/lblPrecio"
+            android:layout_toRightOf="@+id/lblPrecio"
+            android:layout_toEndOf="@+id/lblPrecio" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ingrediente"
+            android:id="@+id/txtIngredienteMenu"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="$"
+            android:id="@+id/lblPrecio"
+            android:layout_below="@+id/txtIngredienteMenu"
+            android:layout_alignLeft="@+id/txtIngredienteMenu"
+            android:layout_alignStart="@+id/txtIngredienteMenu"
+            android:layout_marginTop="23dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/palace"
+            android:layout_alignTop="@+id/txtNombreMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>
